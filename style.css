@@ -1,0 +1,74 @@
+/* =========================
+   ОСНОВА СТРАНИЦЫ
+========================= */
+body{
+    margin:0;
+    background:white;
+    overflow:hidden;
+}
+
+/* =========================
+   КНОПКА "РИСОВАТЬ"
+========================= */
+#drawButton{
+    position:fixed;
+    left:20px;
+    top:20px;
+    padding:10px 18px;
+    font-size:18px;
+    border:none;
+    border-radius:10px;
+    background:#3b82f6;
+    color:white;
+    cursor:pointer;
+    z-index:1000;
+}
+
+#drawButton:hover{
+    background:#2563eb;
+}
+
+/* =========================
+   КНОПКА "НАЧАТЬ"
+========================= */
+#startButton{
+    position:fixed;
+    right:20px;
+    top:20px;
+    padding:10px 18px;
+    font-size:18px;
+    border:none;
+    border-radius:10px;
+    background:#22c55e;
+    color:white;
+    cursor:pointer;
+    z-index:1000;
+}
+
+#startButton:hover{
+    background:#16a34a;
+}
+
+/* =========================
+   ЗОНЫ (квадраты)
+========================= */
+.zone{
+    position:absolute;
+    border:3px solid red;
+    background:rgba(255,0,0,0.08);
+    cursor:pointer;
+}
+
+/* =========================
+   РЕЖИМ РИСОВАНИЯ (курсор)
+========================= */
+
+/* когда ты рисуешь */
+body.drawing{
+    cursor:crosshair;
+}
+
+/* обычный режим */
+body{
+    cursor:default;
+}
